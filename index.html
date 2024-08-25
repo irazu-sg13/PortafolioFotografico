@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="author" content="Janitzi Irazu Serrano Gonzaga">
+  <meta name="description" content="Portafolio de técnicas fotográficas antiguas y experimentales de Irazu Serrano">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Diseño Gráfico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Irazu Serrano | Procesos Fotográficos Antiguos - Experimentales </title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imagenes/code-heart.jpg.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!--AOS Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/2f7d88d064.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="https://github.com/irazu-sg13">
+          <h1 id="logo">IRAZU SERRANO</h1>
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#sobre-mi">Acerca de mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Cursos</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Proyectos
+            </a>
+            <style>
+              .dropdown-menu .dropdown-item {
+                color: black; /* Cambia el color del texto a negro */
+              }
+            </style>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#proyectos">Divulgación Científica: Photo-Ciencia</a></li>
+                <li><a class="dropdown-item" href="#aqui">¡Aquí te digo cómo!</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#caruselfoto">Exposiciones fotográficas</a></li>
+                <li><a class="dropdown-item" href="#participaciones">Participaciones destacadas</a></li>
+            </ul>
+        </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Recomendaciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--boton top-->
+  <div class="contenedor-btn">
+    <div class="btn-arriba">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </div>
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <div class="img-banner">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto.jpg" alt="Foto de Irazu Serrano">
+        <h1 class="animate__animated animate__flash">Hola, soy Irazu Serrano </h1>
+        <!--<h2>Desarrollo sitios web y hago procesos fotográficos antiguo-experimentales.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+
+      <div class="btn-contacto">
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://github.com/irazu-sg13" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/irazu-serrano-b88874106" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/irazu_303/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:jani.serrano303@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-banner">
+      <a href="#sobre-mi">Descubre más sobre mí aquí</a>
+      <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi">
+    <div class="imagen" data-aos="fade-left"></div>
+    <div class="contenedor" data-aos="fade-right">
+      <h2 class="seccion-titulo">Acerca de mí</h2>
+      <p class="seccion-texto">Soy física y estudiante de Enseñanza de las Matemáticas, con experiencia en el desarrollo
+        de sitios web y técnicas fotográficas antiguas y experimentales. <br>
+        Apasionada por el arte y la fotografía digital, combino mi interés en la divulgación científica con la enseñanza
+        de la fotografía, integrando la comprensión físico-química en mis cursos.</p>
+    </div>
+  </section>
+
+  <div class="frase" data-aos="fade-up">
+    <h2>2 años de experiencia en Tecnologías Front-End.</h2>
+    <h4></h4>
+    <br>
+    <h2>4 años de experiencia dando cursos de procesos fotográficos antiguo-experimentales presenciales y a distancia.
+    </h2>
+    <h4></h4>
+    <br>
+    <h2>5 años de experiencia en divulgación científica.</h2>
+    <h4></h4>
+    <br>
+  </div>
+
+  <!--HABILIDADES-->
+  <section class="habilidades_contenedor">
+    <h2 class="seccion-titulo">HABILIDADES</h2>
+    <div class="habilidades">
+      <h3>CÓDIGO Y SOFTWARE</h3>
+      <ul id="iconos_software" data-aos="fade-right">
+        <li> <span> <img src="imagenes/icons/html5.png" alt=""> </span>
+          <p>HTML5</p>
+        </li>
+        <li> <span> <img src="imagenes/icons/css3.png" alt=""> </span>
+          <p>CSS</p>
+        </li>
+        <li> <span> <img src="imagenes/icons/github.png" alt=""> </span>
+          <p>GITHUB</p>
+        </li>
+        <li> <span> <img src="imagenes/icons/wondershare.png" alt=""> </span>
+          <p>WONDERSHARE</p>
+        </li>
+        <li> <span><img src="imagenes/icons/ai.png" alt=""> </span>
+          <p>ILLUSTRATOR</p>
+        </li>
+        <li> <span><img src="imagenes/icons/ps.png" alt=""> </span>
+          <p>PHOTOSHOP</p>
+        </li>
+      </ul>
+      <h3>APTITUDES</h3>
+      <ul data-aos="fade-left">
+        <li><i class="fa-solid fa-palette"></i>
+          <p>Creatividad</p>
+        </li>
+        <li><i class="fa-solid fa-comment"></i></i>
+          <p>Comunicación</p>
+        </li>
+        <li><i class="fa-solid fa-heart"></i>
+          <p>Honestidad</p>
+        </li>
+        <li><i class="fa-solid fa-bolt"></i>
+          <p>Proactividad</p>
+        </li>
+        <li><i class="fa-solid fa-medal"></i>
+          <p>Responsabilidad</p>
+        </li>
+        <li><i class="fa-solid fa-users"></i></i>
+          <p>Trabajo en equipo</p>
+        </li>
+      </ul>
+
+  </section>
+
+
+
+  <!--EXPERIENCIA-->
+  <section class="experiencia_contenedor">
+
+    <div class="mi_experiencia" id="participaciones">
+      <h2 class="seccion-titulo">PARTICIPACIONES DESTACADAS</h2>
+
+      <div class="datos_experiencia" data-aos="zoom-in">
+        <h4>Libro Fotográfico 'Riqueza Natural de México 2020'</h4>
+        <img src="imagenes/RNM.png" alt="Libro Riqueza Natural de México">
+        <div class="fecha_lugar">
+          <h5><i class="fa-solid fa-calendar"></i> 2020</h5>
+          <h5><i class="bi bi-camera"></i></i> México.</h5>
+        </div>
+        <a class="icon-link" href="https://www.lohechoenmexico.mx/libro2020/libro/" target="_blank">
+          Ver proyecto
+        </a>
+        <p> Participante como fotógrafa en la segunda edición del libro Riqueza Natural de México, patrocinado por Nikon
+          MX y Lo hecho en México.</p>
+        <p><i class="fa-solid fa-star"></i> Fotógrafa participante a nivel nacional con dos fotografías de flora.</p>
+      </div>
+
+      <div class="datos_experiencia" data-aos="zoom-in">
+        <h4>Libro fotográfico: Fotografía estenopeica y técnicas alternativas en tiempos de pandemia 2021.</h4>
+        <img src="imagenes/peyka.png"
+          alt="Libro fotográfico Fotografía estenopeica y técnicas alternativas en tiempos de pandemia.">
+        <div class="fecha_lugar">
+          <h5><i class="fa-solid fa-calendar"></i> Publicado en 2023</h5>
+          <h5><i class="bi bi-camera"></i></i> Argentina.</h5>
+        </div>
+        <a class="icon-link" href="https://www.instagram.com/p/CqmPHtStvEe/?img_index=1" target="_blank">
+          Ver proyecto
+        </a>
+        <p>Participación en con fotografías presentadas en el 1er Congreso Virtual Latinoamericano de Fotografía
+          Estenopeica y Técnicas Alternativas 2021.</p>
+        <p><i class="fa-solid fa-star"></i> Fotógrafa participante en el libro de la editorial Ediciones Peyka,
+          Argentina.</p>
+      </div>
+
+      <div class="datos_experiencia" data-aos="zoom-in">
+        <h4>3er lugar a nivel Universitario del Concurso 'íconos que reflejan nuestra autonomía universitaria'</h4>
+        <img src="imagenes/concurso.png"
+          alt="3er lugar a nivel Universitario del Concurso 'íconos que reflejan nuestra autonomía universitaria'">
+        <div class="fecha_lugar">
+          <h5><i class="fa-solid fa-calendar"></i> 2020</h5>
+          <h5><i class="bi bi-camera"></i></i> México.</h5>
+        </div>
+        <a class="icon-link"
+          href="https://cconoticias.com/2019/07/06/premiaron-a-ganadores-de-concurso-de-fotografia-de-aficionados-al-patrimonio-cultural-universitario/"
+          target="_blank">
+          Ver proyecto
+        </a>
+        <p>Participación en el concurso fotográfico Universitario de la UAEMéx.</p>
+        <p><i class="fa-solid fa-star"></i> Ganadora del tercer lugar a nivel estatal.</p>
+      </div>
+
+      <div class="datos_experiencia" data-aos="zoom-in">
+        <h4>Corredor Cultural Universitario 'Ser UAEMéx'</h4>
+        <img src="imagenes/corredor.png" alt="Corredor fotográfico universitario 'Ser Uaeméx'">
+        <div class="fecha_lugar">
+          <h5><i class="fa-solid fa-calendar"></i> 2019</h5>
+          <h5><i class="bi bi-camera"></i></i> México.</h5>
+        </div>
+        <a class="icon-link"
+          href="https://mvt.com.mx/alfredo-barrera-inauguro-la-muestra-fotografica-colectiva-ser-uaemex/"
+          target="_blank">
+          Ver proyecto
+        </a>
+        <p>Participación en el corredor fotográfico Universitario de la UAEMéx con una pieza fotográfica ganadora de un
+          concurso a nivel universitario, 2019.</p>
+        <p><i class="fa-solid fa-star"></i> Fotógrafa participante con una fotografía ganadora de concurso
+          universitario.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="experiencia seccion-clara">
+    <div class="container text-center">
+      <h2 class="seccion-titulo">Cursos y Talleres </h2>
+      <div class="row">
+        <!-- Fotografía alternativa -->
+        <div class="columna col-12 col-md-4" data-aos="zoom-in">
+          <i class="bi bi-camera-fill"></i>
+          <p class="experiencia-titulo">Fotografía alternativa</p>
+          <p>Curso-taller sobre técnicas fotográficas experimentales que datan de finales del S. XX e inicios del S.
+            XXI.</p>
+          <p>Historia, procesos físico-químicos y elaboración de los procesos.</p>
+          <p>Procesos que requieren revelado digital (en su mayoría) mediante el uso de PS.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Solarigrafía</span>
+            <span class="badge text-bg-primary">Estenopeica 35mm</span>
+            <span class="badge text-bg-primary">Lumen Print</span>
+            <span class="badge text-bg-primary">Cianolumen</span>
+            <span class="badge text-bg-primary">Clorotipia/Fitotipia</span>
+          </div>
+        </div>
+        <!-- Fotografía antigua -->
+        <div class="columna col-12 col-md-4" data-aos="zoom-in">
+          <i class="bi bi-image"></i>
+          <p class="experiencia-titulo">Fotografía antigua </p>
+          <p>Curso-taller sobre técnicas fotográficas históricas que datan del S. XIX.</p>
+          <p>Historia, procesos físico-químicos y elaboración de los procesos.</p>
+          <p>Procesos fotográficos que requieren revelados o fijados químicos.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Antotipia</span>
+            <span class="badge text-bg-primary">Cianotipia sobre diversos soportes</span>
+            <span class="badge text-bg-primary">Marrón Van Dyke</span>
+            <span class="badge text-bg-primary">Estenopeica sobre papel</span>
+            <span class="badge text-bg-primary">Goma Bicromatada</span>
+          </div>
+        </div>
+        <!-- Acuarelas orgánicas -->
+        <div class="columna col-12 col-md-4" data-aos="zoom-in">
+          <i class="bi bi-palette-fill"></i>
+          <p class="experiencia-titulo">Acuarelas orgánicas</p>
+          <p> Curso-taller sobre la obtención de pigmentos naturales orgánicos para la elaboración de acuarelas.</p>
+          <p> Elaboración de dos fórmulas para crear aglutinantes no-químicos.</p>
+          <p> Elaboración de acuarelas con pigmentos minerales.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Pigmentos orgánicos</span>
+            <span class="badge text-bg-primary">Aglutinantes</span>
+            <span class="badge text-bg-primary">Pigmentos minerales</span>
+            <span class="badge text-bg-primary">Estampado botánico</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto" data-aos="fade-up">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            Solicitar más información
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Curso-taller de...
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:jani.serrano303@gmail.com">
+              <button type="button">
+                Enviar correo <br>
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos / Conferencias / Proyectos -->
+  <section class="proyectos" id="proyectos">
+    <h2 class="seccion-titulo"> PROYECTOS / CURSOS IMPARTIDOS / CONFERENCIAS</h2>
+    <p>A continuación encontrarás proyectos en los que he participado y cursos que he impartido, así como una muestra de mis exposiciones fotográficas.</p>
+    <article class="proyectos-items">
+      <figure class="item" data-aos="zoom-in">
+        <img src="imagenes/leo.png" alt="">
+        <div class="item-content">
+          <h6>Talleres 'Photo-Ciencia' 2020-2023</h6>
+          <h3>Divulgación científica</h3>
+          <p>Miembro de la Red de Divulgadores de la Cultura y la Ciencia 'José Antonio Alzate', con talleres
+            presenciales y virtuales enfocados
+            en técnicas experimentales y antiguas de fotografía.</p>
+          <a target="_blank"
+            href="https://www.canva.com/design/DAGNtBFFCno/E8ASSUrnYq70uHjt-bbFfA/edit?utm_content=DAGNtBFFCno&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Ver
+            más </a>
+        </div>
+      </figure>
+
+      <figure id="aqui" class="item" data-aos="zoom-in">
+        <img src="imagenes/aqui.png" alt="">
+        <div class="item-content">
+          <h6>¡Aquí te digo cómo!</h6>
+          <h3>Red de Divulgadores de la Ciencia y la Cultura JAA</h3>
+          <p>Participación en los programas de divulgación cinetífica ¡Aquí te digo cómo! con la técnica de cianotipia.
+          </p>
+          <a target="_blank"
+            href="https://www.canva.com/design/DAGNtBFFCno/E8ASSUrnYq70uHjt-bbFfA/edit?utm_content=DAGNtBFFCno&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Ver
+            más</a>
+        </div>
+      </figure>
+
+      <figure id="caruselfoto" class="item" data-aos="zoom-in">
+        <img src="imagenes/carusel1.png" alt="">
+        <div class="item-content">
+          <h6>Exposiciones y charlas</h6>
+          <h3>Exposiciones fotográficas virtuales y presenciales</h3>
+          <p>Planeación y exhibición de fotografía digital y técnicas antiguas-experimentales.</p>
+          <a target="_blank" href="https://www.facebook.com/watch/?v=657341182352275">Ver exposición</a>
+        </div>
+      </figure>
+
+      <figure class="item" data-aos="zoom-in">
+        <img src="imagenes/ciano.png" alt="">
+        <div class="item-content">
+          <h6>Patrinomio Cultural UAEMéx</h6>
+          <h3>Relatos visuales en cianotipia, Galería Virtual</h3>
+          <p>Participación como fotografa en la Galería Virtual de la Dirección de Patrimonio Cultural UAEMéx 2020.
+          </p>
+          <a target="_blank" href="https://www.facebook.com/photo?fbid=1570012436534279">Ver
+            Galería</a>
+        </div>
+      </figure>
+
+    </article>
+  </section>
+
+  <!-- CARRUSEL DE FOTOS -->
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="padding-top: 3em">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10" class="active"></button>
+
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11" class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+
+        <!-- Marrón Van Dyke -->
+      <div class="carousel-item active">
+        <img src="imagenes/bg03.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Marrón Van Dyke">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h4>Marrón Van Dyke.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas y nitrato de plata.
+            </p>
+          </div>
+        </div>
+      </div>
+        <!-- Fotograma cianotipia -->
+      <div class="carousel-item">
+        <img src="imagenes/bg01.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h4>Fotograma - Cianotipia.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas.</p>
+          </div>
+        </div>
+      </div>
+        <!-- Antotipia -->
+      <div class="carousel-item">
+        <img src="imagenes/bg05.jpg" class="d-block w-100 h-90 object-fit-cover" alt="Antotipia"
+          style="height: 60vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: black">
+            <h4>Antotipia de betabel y jengibre.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando pigmentos orgánicos fotosensibles.</p>
+          </div>
+        </div>
+      </div>
+         <!-- Estenopeica 35mm -->
+      <div class="carousel-item">
+        <img src="imagenes/bg07.png" class="d-block w-100 h-80 object-fit-cover" alt="Estenopeica en Rollo de 35 mm"
+          style="height: 90vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h4>Fotografía estenopeica en rollo fotográfico a color de 35mm.</h4>
+            <p class="opacity-75">Proceso fotográfico experimental basado en la cámara estenopeica.</p>
+          </div>
+        </div>
+      </div>
+         <!-- Cianotipia vidrio inti -->
+      <div class="carousel-item">
+        <img src="imagenes/bg06.jpeg" class="d-block w-96 h-70 object-fit-cover" alt="Cianotipia en vidrio"
+          style="height: 90vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h4>Cianotipia sobre vidrio virada con café expreso.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas.</p>
+          </div>
+        </div>
+      </div>
+           <!-- Cianotipia papel inti -->
+      <div class="carousel-item">
+        <img src="imagenes/bg08.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia sobre papel fabriano"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: black">
+            <h4>Cianotipia sobre papel fabriano de 300g.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Cianotipia virada luna -->
+      <div class="carousel-item">
+        <img src="imagenes/bg04.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia sobre papel fabriano virada"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: rgb(255, 255, 255)">
+            <h4>Cianotipia sobre papel fabriano de 300g virada con té negro.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas, intervenida con taninos.</p>
+          </div>
+        </div>
+      </div>
+          <!-- Cianotipia fabriano bellas artes -->
+      <div class="carousel-item">
+        <img src="imagenes/bg013.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia sobre papel fabriano"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: rgb(255, 255, 255)">
+            <h4>Cianotipia sobre papel fabriano de 150g.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas.</p>
+          </div>
+        </div>
+      </div>
+          <!-- Cianotipia vidrio familia -->
+      <div class="carousel-item">
+        <img src="imagenes/bg015.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia sobre vidrio"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: rgb(0, 0, 0)">
+            <h4>Cianotipia sobre vidrio.</h4>
+            <p class="opacity-75">Proceso fotográfico del S. XIX usando sales de metales ferrosas.</p>
+          </div>
+        </div>
+      </div>
+       <!-- Solarigrafía-->
+       <div class="carousel-item">
+        <img src="imagenes/bg02.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Solarigrafía"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: rgb(255, 255, 255)">
+            <h4>Solarigrafía.</h4>
+            <p class="opacity-75">Proceso fotográfico experimental basado en las propiedades fotosensibles del papel fotográfico.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Lumen print-->
+      <div class="carousel-item">
+        <img src="imagenes/bg012.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Lumen print"
+          style="height: 80vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-start" style="color: rgb(255, 255, 255)">
+            <h4>Lumen print / Impresiones lumínicas.</h4>
+            <p class="opacity-75">Proceso fotográfico experimental basado en las propiedades fotosensibles del papel fotográfico.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Goma bicromatada-->
+      <div class="carousel-item">
+        <img src="imagenes/bg011.jpeg" class="d-block w-100 h-100 object-fit-cover"
+          alt="Goma bicromatada" style="height: 100vh; object-position: center">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h4>Goma bicromatada.</h4>
+            <p>Técnica fotográfica antigua del S. XIX usando pigmentos inorgánicos y goma.</p>
+            <p><a class="opacity-75" href=""></a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios">
+    <h2 class="seccion-titulo">Recomendaciones</h2>
+    <h3 class="seccion-descripcion">Estos son algunas recomedaciones y testimonios de mi trabajo como instructora de procesos fotográficos antiguo-experimentales 
+      (ex-alumnos y ex-alumnas).
+    </h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="zoom-in">
+      <div class="carousel-inner">
+         <!-- Areli -->
+        <div class="carousel-item active">
+          <div class="container">
+            <p class="testimonio-texto">Las conferencias e información son muy completas, denota el dominio de los temas
+              y las grabaciones ayudan
+              mucho porque a veces es mucha información y proceso y así se facilita a la hora de realizar las piezas.
+              Agradezco mucho a la maestra compartir su información. Gracias.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Areli Vélez.</p>
+              <p class="cargo">Fotógrafa y artísta visual, México. </p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Polito -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Solo agradecer por todo lo compartido, muchas gracias por todo, excelente
+              trabajo
+              Muy interesante y agradecido de que fuera abierto ya que tuve la oportunidad de tomarlo a distancia desde
+              Argentina,
+              muy amable en todo momento Jani excelentes sus exposiciones y recomendaciones.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Mtro. Luis D. Polo</p>
+              <p class="cargo">Docente de la Tecnicatura Universitaria en Fotografía y de la Lic. en Artes Visuales,
+                Argentina.
+                <br> Amigo y colega QEPD.
+              </p>
+              <a href="https://www.instagram.com/pololuiss/"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+          <!-- Gloria -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Agradecer por su paciencia y por todas las herramientas que nos brindo, pptx
+              grabaciones,
+              opciones de conseguir materiales. Es muy profesional y busca los recursos para que quede todo claro en las
+              clases virtuales.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Gloria García</p>
+              <p class="cargo">Fotógrafa, CDMX</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Gabriel -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> En general, el contenido y estructura de los talleres y conferencias me
+              parecieron atractivos, resalto que hubo una investigación previa, así como también un amplio conocimiento
+              y pasión sobre los temas expuestos. Del mismo modo,
+              es importante resaltar la atención y predisposición por resolver dudas de los asistentes por parte de la
+              tallerista.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Gabriel Avellaneda</p>
+              <p class="cargo">Técnico superior en fotografía, Argentina.</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Miguel -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Agradezco mucho el aprendizaje qué tuve en este taller, excelente maestra
+              Irazu.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Miguel Espino</p>
+              <p class="cargo">Fotógrafo y artista visual, CDMX</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Eduardo -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Mi experiencia en el taller de fotografía experimental fue increíble. Aprendí
+              técnicas únicas y procesos creativos que ampliaron mi visión artística. La profesora Janitzi fue muy
+              inspiradora y el ambiente de aprendizaje fue estimulante.
+              Recomiendo este taller a todos los artistas visuales que deseen explorar nuevas formas de expresión
+              fotográfica.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Eduardo Bravo</p>
+              <p class="cargo">Físico y fotógrafo, CDMX</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jess Alvarez  -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> En general me pareció una gran actividad y muy enriquecedora, a veces no daba
+              tiempo de terminar todo en los talleres o de abarcar más cosas que se habían comentado, pero entiendo que
+              el tiempo nunca es suficiente y que todo lo que se vio fue muy claro y bien explicado y que de hecho la
+              bibliografía siempre estuvo al alcance para complementar las sesiones.
+              La maestra siempre estuvo dispuesta a resolver dudas y estar al pendiente de las actividades.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Jess Álvarez.</p>
+              <p class="cargo">Fotógrafa, México.</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Janeth  -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Gracias por todo, las grabaciones, el material para que se pueda seguir
+              revisando. Tuve la
+              oportunidad de estar en las primeras sesiones y las demás comence a ver las grabaciones y me pareció una
+              maravilla.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Janeth Gutiérrez.</p>
+              <p class="cargo">Fotógrafa y diseñadora gráfica, España-Perú.</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+         <!--  Leonel  -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Este tipo de conferencias y talleres son muy buenos e interesantes. La ponente muestra bastante disponibilidad y gusto por compartir. Para mi fue complejo 
+              seguir los pasos para realizar la parte práctica pero me gusta poder tener acceso a las grabaciones y material. Gracias. </p>
+            <div class="testimonio-info">
+              <p class="cliente"> Leonel Parada</p>
+              <p class="cargo"> Fotógrafo, Bogotá, Colombia. </p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cesar  -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Muy interesantes, se complementan muy bien las clases con la conferencia y el
+              taller, tiene mucho conocimiento sobre el tema. </p>
+            <div class="testimonio-info">
+              <p class="cliente">César Blanco.</p>
+              <p class="cargo">Fotógrafo de procesos alternativos, España.</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Eytan -->
+        <div class="carousel-item">
+          <div class="container">
+            <p class="testimonio-texto"> Bastante informativo, interesante. Excelente calidad de aprendizaje. Tiene un
+              amplio espectro para su uso en otras actividades.</p>
+            <div class="testimonio-info">
+              <p class="cliente">Eytan Rebollar.</p>
+              <p class="cargo">Físico-matemático, México.</p>
+              <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+
+  <!-- Pie de pagina (footer) -->
+  <footer>
+    <img class="footer-logo" src="imagenes/code-heart.jpg.png" alt="Logo del portafolio">
+    <p id="footer-texto" class="footer-texto text-center"> <span> Sólo la fotografía tiene el poder de dividir el tiempo
+        en pequeños momentos de tan breve duración que no podemos percibirlos con los ojos.</span><br> - Eadweard
+      Muybridge - </p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://github.com/irazu-sg13" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/irazu-serrano-b88874106" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/irazu_303/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:jani.serrano303@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://alumnouaemex-my.sharepoint.com/:b:/g/personal/jserranog913_alumno_uaemex_mx/EWNn2pshXDFMsZTai5kbRFgBqZzRetXJWd7xO_KR4ysXwA?e=lQukVf" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-pdf"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Irazu Serrano (2024) &#169;</div>
+  </footer>
+  <script src="top.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
