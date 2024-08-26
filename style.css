@@ -429,6 +429,7 @@ margin: 0 auto;
 
 .experiencia h2{
   color: white;
+  text-align: center;
 }
 .experiencia p{
   font-size: 1.2em;
@@ -456,6 +457,8 @@ margin: 0 auto;
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
+  text-align: center;
+  display: flex;
 }
 
 .badges-contenedor {
@@ -583,6 +586,7 @@ margin: 0 auto;
   background-color: white;
   border-radius: 25px;
   margin-top: 1em;
+  height: auto;
 }
 
 .carousel-item {
@@ -609,11 +613,13 @@ margin: 0 auto;
   font-size: 20px;
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
+  height: auto;
 }
 
 .testimonio-info {
   font-weight: bold;
   text-align: center;
+  height: auto;
 }
 
 .testimonio-info p {
@@ -669,6 +675,9 @@ margin: 0 auto;
   margin: 10px;
   border-radius: 100px;
   transition: all 0.2s ease-in-out;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
 }
 
 .contacto button:hover {
@@ -926,4 +935,13 @@ footer {
   .hero-inferior-imagen {
     max-width: 600px;
   }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 300px; /* Al menos 300px de ancho y se expanden para llenar el espacio */
 }

@@ -7,7 +7,7 @@
   <meta name="author" content="Janitzi Irazu Serrano Gonzaga">
   <meta name="description" content="Portafolio de técnicas fotográficas antiguas y experimentales de Irazu Serrano">
   <meta name="keywords" content="HTML, CSS, JavaScript, Diseño Gráfico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
   <!-- Titulo -->
   <title>Irazu Serrano | Procesos Fotográficos Antiguos - Experimentales </title>
   <!-- Favicon -->
@@ -75,11 +75,12 @@
 
           
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" href="#contactos">Contacto</a>
           </li>
+            <!--boton top
           <li class="nav-item">
             <a class="nav-link" href="#testimonios">Recomendaciones</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -95,7 +96,7 @@
   <section class="hero align-items-stretch">
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
       <div class="img-banner">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto.jpg" alt="Foto de Irazu Serrano">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/foto.jpg" alt="Foto de Irazu Serrano" style="margin-top: 3em">
         <h1 class="animate__animated animate__flash">Hola, soy Irazu Serrano </h1>
         <!--<h2>Desarrollo sitios web y hago procesos fotográficos antiguo-experimentales.</h2>-->
 
@@ -282,7 +283,7 @@
   <!-- SERVICIOS -->
   <section id="servicios" class="experiencia seccion-clara">
     <div class="container text-center">
-      <h2 class="seccion-titulo">Cursos y Talleres </h2>
+      <h2 class="seccion-titulo">Cursos y Talleres</h2>
       <div class="row">
         <!-- Fotografía alternativa -->
         <div class="columna col-12 col-md-4" data-aos="zoom-in">
@@ -360,7 +361,7 @@
 
   <!-- Cursos / Conferencias / Proyectos -->
   <section class="proyectos" id="proyectos">
-    <h2 class="seccion-titulo"> PROYECTOS / CURSOS IMPARTIDOS / CONFERENCIAS</h2>
+    <h2 class="seccion-titulo"> PROYECTOS </h2>
     <p>A continuación encontrarás proyectos en los que he participado y cursos que he impartido, así como una muestra de mis exposiciones fotográficas.</p>
     <article class="proyectos-items">
       <figure class="item" data-aos="zoom-in">
@@ -370,7 +371,7 @@
           <h3>Divulgación científica</h3>
           <p>Miembro de la Red de Divulgadores de la Cultura y la Ciencia 'José Antonio Alzate', con talleres
             presenciales y virtuales enfocados
-            en técnicas experimentales y antiguas de fotografía.</p>
+            en técnicas antiguas de fotografía.</p>
           <a target="_blank"
             href="https://www.canva.com/design/DAGNtBFFCno/E8ASSUrnYq70uHjt-bbFfA/edit?utm_content=DAGNtBFFCno&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Ver
             más </a>
@@ -415,6 +416,7 @@
     </article>
   </section>
 
+
   <!-- CARRUSEL DE FOTOS -->
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="padding-top: 3em">
@@ -435,7 +437,7 @@
     <div class="carousel-inner">
 
         <!-- Marrón Van Dyke -->
-      <div class="carousel-item active">
+      <div class="carousel-item">
         <img src="imagenes/bg03.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Marrón Van Dyke">
         <div class="container">
           <div class="carousel-caption text-start">
@@ -467,7 +469,7 @@
         </div>
       </div>
          <!-- Estenopeica 35mm -->
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="imagenes/bg07.png" class="d-block w-100 h-80 object-fit-cover" alt="Estenopeica en Rollo de 35 mm"
           style="height: 90vh; object-position: center">
         <div class="container">
@@ -478,8 +480,8 @@
         </div>
       </div>
          <!-- Cianotipia vidrio inti -->
-      <div class="carousel-item">
-        <img src="imagenes/bg06.jpeg" class="d-block w-96 h-70 object-fit-cover" alt="Cianotipia en vidrio"
+      <div class="carousel-item active">
+        <img src="imagenes/bg06.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia en vidrio"
           style="height: 90vh; object-position: center">
         <div class="container">
           <div class="carousel-caption text-start">
@@ -489,7 +491,7 @@
         </div>
       </div>
            <!-- Cianotipia papel inti -->
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="imagenes/bg08.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cianotipia sobre papel fabriano"
           style="height: 80vh; object-position: center">
         <div class="container">
@@ -556,7 +558,7 @@
       </div>
 
         <!-- Goma bicromatada-->
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="imagenes/bg011.jpeg" class="d-block w-100 h-100 object-fit-cover"
           alt="Goma bicromatada" style="height: 100vh; object-position: center">
         <div class="container">
@@ -676,8 +678,7 @@
             <p class="testimonio-texto"> Mi experiencia en el taller de fotografía experimental fue increíble. Aprendí
               técnicas únicas y procesos creativos que ampliaron mi visión artística. La profesora Janitzi fue muy
               inspiradora y el ambiente de aprendizaje fue estimulante.
-              Recomiendo este taller a todos los artistas visuales que deseen explorar nuevas formas de expresión
-              fotográfica.</p>
+              Recomiendo ampliamente este taller a todos los artistas visuales.</p>
             <div class="testimonio-info">
               <p class="cliente">Eduardo Bravo</p>
               <p class="cargo">Físico y fotógrafo, CDMX</p>
@@ -689,9 +690,8 @@
         <!-- Jess Alvarez  -->
         <div class="carousel-item">
           <div class="container">
-            <p class="testimonio-texto"> En general me pareció una gran actividad y muy enriquecedora, a veces no daba
-              tiempo de terminar todo en los talleres o de abarcar más cosas que se habían comentado, pero entiendo que
-              el tiempo nunca es suficiente y que todo lo que se vio fue muy claro y bien explicado y que de hecho la
+            <p class="testimonio-texto"> En general me pareció una gran actividad y muy enriquecedora, todo lo que se vio fue muy claro 
+              y bien explicado y que de hecho la
               bibliografía siempre estuvo al alcance para complementar las sesiones.
               La maestra siempre estuvo dispuesta a resolver dudas y estar al pendiente de las actividades.</p>
             <div class="testimonio-info">
@@ -736,7 +736,7 @@
             <p class="testimonio-texto"> Muy interesantes, se complementan muy bien las clases con la conferencia y el
               taller, tiene mucho conocimiento sobre el tema. </p>
             <div class="testimonio-info">
-              <p class="cliente">César Blanco.</p>
+              <p class="cliente">César Blasco.</p>
               <p class="cargo">Fotógrafo de procesos alternativos, España.</p>
               <a href=" "><i class="bi bi-instagram"></i></a>
             </div>
@@ -777,7 +777,7 @@
     <p id="footer-texto" class="footer-texto text-center"> <span> Sólo la fotografía tiene el poder de dividir el tiempo
         en pequeños momentos de tan breve duración que no podemos percibirlos con los ojos.</span><br> - Eadweard
       Muybridge - </p>
-    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <div id="contactos" class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
       <a href="https://github.com/irazu-sg13" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-github"></i>
       </a>
